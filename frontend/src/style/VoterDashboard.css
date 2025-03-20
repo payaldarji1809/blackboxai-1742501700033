@@ -1,0 +1,75 @@
+/* Custom scrollbar for tables */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Hover effects for buttons */
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Transition effects */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.bg-gray-50:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Confirmation key styling */
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Table row hover effect */
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status indicators */
+.text-green-500 {
+  color: #10B981;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 640px) {
+  .p-6 {
+    padding: 1rem;
+  }
+  
+  .px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
