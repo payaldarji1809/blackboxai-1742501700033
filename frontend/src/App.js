@@ -10,6 +10,7 @@ import RegisterVoter from "./RegisterVoter";
 import Vote from "./Vote";
 import VerifyVote from "./VerifyVote";
 import Results from "./Results";
+import VoterDashboard from "./VoterDashboard";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
           <Route path="/dashboard" element={<ClientDashboard />} />
           <Route path="/voter" element={<VoterLogin />} />
           <Route path="/register-voter" element={<RegisterVoter />} />
-          <Route path="/vote" element={<Vote />} />
+          <Route path="/voter-dashboard" element={<VoterDashboard />} />
+          <Route path="/vote/:electionId" element={<Vote />} />
           <Route path="/verify-vote" element={<VerifyVote />} />
           <Route path="/results" element={<Results />} />
         </Routes>
