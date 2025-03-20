@@ -7,7 +7,7 @@ class ProxyHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         try:
             # Forward request to React dev server
-            url = f'http://localhost:3001{self.path}'
+            url = f'http://localhost:3000{self.path}'  # Changed from 3001 to 3000
             response = urllib.request.urlopen(url)
             
             # Copy response headers
