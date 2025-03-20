@@ -41,8 +41,7 @@ const VoterLogin = () => {
       });
 
       localStorage.setItem("voter_token", response.data.token);
-      alert("Login successful!");
-      navigate("/vote");
+      navigate("/voter-dashboard"); // Changed from "/vote" to "/voter-dashboard"
     } catch (error) {
       alert(error.response?.data?.message || "Login failed. Please check your Voter ID.");
     }
